@@ -5,6 +5,11 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 14pt;
   }
+
+  .rebio p {
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
   
   /* 强制覆盖表格宽度，适配大屏幕 */
   table[style*="max-width:800px"] {
