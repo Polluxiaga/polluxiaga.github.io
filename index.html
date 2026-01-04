@@ -85,32 +85,32 @@
                 <tr style="padding:0px">
                   <td colspan="2" style="padding:0">
                     
-                    <!-- PAPER ENTRY: GazeNav -->
+                    <!-- PAPER ENTRY: Gaze2Nav -->
                     <!-- 交互逻辑 onmouseover/onmouseout -->
-                    <div class="paper-entry" onmouseover="gazenav_start()" onmouseout="gazenav_stop()">
+                    <div class="paper-entry" onmouseover="gaze2nav_start()" onmouseout="gaze2nav_stop()">
                       
                       <script type="text/javascript">
-                        function gazenav_start() { document.getElementById('gazenav_arch').style.opacity = "1"; }
-                        function gazenav_stop() { document.getElementById('gazenav_arch').style.opacity = "0"; }
-                        gazenav_stop();
+                        function gaze2nav_start() { document.getElementById('gaze2nav_arch').style.opacity = "1"; }
+                        function gaze2nav_stop() { document.getElementById('gaze2nav_arch').style.opacity = "0"; }
+                        gaze2nav_stop();
                       </script>
 
                       <!-- 左侧：图片列 (可在这里通过 flex 控制宽度) -->
                       <div class="paper_image_col" style="flex: 0 0 34%;"> 
                         
                         <!-- 悬停显示的图 -->
-                        <div class="paper_stay" id="gazenav_arch">
-                          <img src="images/gazenav_arch.jpg" alt="arch">
+                        <div class="paper_stay" id="gaze2nav_arch">
+                          <img src="images/gaze2nav_arch.jpg" alt="arch">
                         </div>
                         
                         <!-- 默认显示的图 -->
-                        <img class="paper_teaser" src="images/gazenav_teaser.jpg" alt="teaser">
+                        <img class="paper_teaser" src="images/gaze2nav_teaser.jpg" alt="teaser">
                       
                       </div>
                     
                       <!-- 右侧：信息列 -->
                       <div class="paper-body highlight">
-                        <a href="data/gazenav.pdf">
+                        <a href="data/gaze2nav.pdf">
                           <span class="papertitle">Learning from Human Gaze: Human-like Robot Social Navigation in Dense Crowds</span>
                         </a>
                         
