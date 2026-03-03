@@ -12,20 +12,20 @@
   </head>
 
   <body>
-    <!-- 主容器：限制最大宽度 800px -->
+    <!-- MAIN CONTAINER: maximum width 800px -->
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
       <tbody>
         <tr style="padding:0px">
           <td style="padding:0px">
             
-            <!-- ========================== -->
-            <!-- SECTION: 个人简介 (Bio)    -->
-            <!-- ========================== -->
+            <!-- ================ -->
+            <!-- SECTION: Bio    -->
+            <!-- ================ -->
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
                 <tr style="padding:0px">
                   
-                  <!-- 左侧：文字介绍 -->
+                  <!-- LEFT: Text -->
                   <td style="padding:2%;width:70%;vertical-align:middle">
                     <p class="name" style="text-align: center;">
                       <span style="font-family: Lato, Verdana, Helvetica, sans-serif;">Zhecheng Yu</span> 余喆诚
@@ -49,7 +49,7 @@
                     </p>
                   </td>
                   
-                  <!-- 右侧：头像 -->
+                  <!-- RIGHT: Avatar -->
                   <td style="padding:2.5%;width:20%;max-width:20%">
                     <a href="images/photo.jpg">
                       <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/photo.jpg" class="hoverZoomLink">
@@ -60,9 +60,9 @@
               </tbody>
             </table>
 
-            <!-- ============================= -->
-            <!-- SECTION: 研究成果 (Research)  -->
-            <!-- ============================= -->
+            <!-- =================== -->
+            <!-- SECTION: Research  -->
+            <!-- =================== -->
             <section class = "rebio">
               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
@@ -84,7 +84,7 @@
                   <td colspan="2" style="padding:0">
                     
                     <!-- PAPER ENTRY: Gaze2Nav -->
-                    <!-- 交互逻辑 onmouseover/onmouseout -->
+                    <!-- UI: onmouseover/onmouseout -->
                     <div class="paper-entry" onmouseover="gaze2nav_start()" onmouseout="gaze2nav_stop()">
                       
                       <script type="text/javascript">
@@ -93,26 +93,26 @@
                         gaze2nav_stop();
                       </script>
 
-                      <!-- 左侧：图片列 (可在这里通过 flex 控制宽度) -->
+                      <!-- LEFT: image -->
                       <div class="paper_image_col" style="flex: 0 0 34%;"> 
                         
-                        <!-- 悬停显示的图 -->
+                        <!-- onmouseover -->
                         <div class="paper_stay" id="gaze2nav_arch">
                           <img src="images/gaze2nav_arch.jpg" alt="arch">
                         </div>
                         
-                        <!-- 默认显示的图 -->
+                        <!-- onmouseout -->
                         <img class="paper_teaser" src="images/gaze2nav_teaser.jpg" alt="teaser">
                       
                       </div>
                     
-                      <!-- 右侧：信息列 -->
+                      <!-- RIGHT: text -->
                       <div class="paper-body highlight">
                         <a href="papers/gazenav.pdf">
                           <span class="papertitle">Learning from Human Gaze: Human-like Robot Social Navigation in Dense Crowds</span>
                         </a>
                         
-                        <!-- 作者列表 -->
+                        <!-- author list -->
                         <span class="authors">
                           <span style="font-weight: bold;">Zhecheng Yu<sup>*</sup></span>, 
                           <span style="color: #6f42c1;">Yan Lyu<sup>*</sup></span>, 
@@ -120,7 +120,7 @@
                           <span style="color: #6f42c1;">Brian Y. Lim<sup>&dagger;</sup></span>
                         </span>
                         
-                        <!-- 会议/年份 -->
+                        <!-- venue -->
                         <span class="venue">
                           <span style="background-color: #ffffff">&nbsp;AAAI 2026&nbsp;</span>
                         </span>
@@ -139,9 +139,9 @@
               </tbody>
             </table>
             
-            <!-- =================================== -->
-            <!-- SECTION: 学习笔记 (Learning Notes)  -->
-            <!-- =================================== -->
+            <!-- ========================= -->
+            <!-- SECTION: Learning Notes  -->
+            <!-- ========================= -->
             <section class = "rebio" style="margin-top: 40px;">
               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                 <tbody>
@@ -162,25 +162,25 @@
                 <tr style="padding:0px">
                   <td colspan="2" style="padding:0">
                     
-                    <!-- COURSE ENTRY: mit 6.s184 -->
+                    <!-- NOTES ENTRY: mit 6.s184 -->
                     <div class="paper-entry">
 
-                      <!-- 左侧：图片列 (可在这里通过 flex 控制宽度) -->
+                      <!-- LEFT: image -->
                       <div class="paper_image_col" style="flex: 0 0 34%; display: flex; align-items: center; justify-content: center; overflow: hidden;"> 
                         
-                        <!-- 默认显示的图 -->
+                        <!-- onmouseout -->
                         <img class="paper_teaser" src="images/mit_6.s184.png" alt="teaser"
                         style="height: 100%; width: auto; max-width: 55%; object-fit: contain; border-radius: 4px;">
                       
                       </div>
                     
-                      <!-- 右侧：信息列 -->
+                      <!-- RIGHT: text -->
                       <div class="paper-body">
                         <a href="https://yuzhecheng.notion.site/Flow-Matching-Diffusion-Models-27388bf1d73380719d93e36663b4f84d" target="_blank">
                           <span class="papertitle">Introduction to Flow Matching and Diffusion Models</span>
                         </a>
                         
-                        <!-- 所属课程 -->
+                        <!-- course -->
                         <span class="venue">
                           <span style="background-color: #ffffff">&nbsp;MIT Computer Science Class 6.S184: Generative AI with Stochastic Differential Equations&nbsp;</span>
                         </span>
@@ -192,16 +192,23 @@
                       </div>
                       
                     </div>
-                    <!-- END PAPER ENTRY -->
+                    <!-- END NOTES ENTRY -->
 
                   </td>
                 </tr>
               </tbody>
             </table>
 
-            <!-- ========================== -->
+            <!-- ================= -->
+            <!-- SECTION: Visitor -->
+            <!-- ================= -->
+            <section style="margin-top: 80px;">
+              <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=efe5ff&w=400&t=tt&d=d5Ckepu-Ol6c-04x9prtFYsRyTMzBlpYGLul6aEYC14&co=ffffff&cmo=6f42c1&cmn=4b0082&ct=4b0082'></script>
+            </section>
+
+            <!-- =================== -->
             <!-- SECTION: Copyright -->
-            <!-- ========================== -->
+            <!-- =================== -->
             </tbody></table>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
