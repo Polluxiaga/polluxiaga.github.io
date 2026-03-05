@@ -31,13 +31,13 @@
   
   /* 链接样式 */
   a {
-    color: #4b0082; /* 深紫 */
+    color: #4b0082;
     text-decoration: none;
   }
   
   a:focus, 
   a:hover {
-    color: #6f42c1; /* 悬停亮紫 */
+    color: #6f42c1;
     text-decoration: none;
   }
   
