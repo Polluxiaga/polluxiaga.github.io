@@ -171,8 +171,11 @@
                       style="flex: 0 0 34%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
 
                       <!-- 视频缩略图（可点击） -->
-                      <video class="paper_teaser" style="cursor: pointer;"
-                        onclick="openVideoModal('data/eye_tracking_demo.mp4')">
+                      <video class="paper_teaser"
+                             style="cursor: pointer;" 
+                             poster="data/eye_tracking_poster.jpg"
+                             preload="none"
+                             onclick="openVideoModal('data/eye_tracking_demo.mp4')">
                         <source src="data/eye_tracking_demo.mp4" type="video/mp4">
                       </video>
 
