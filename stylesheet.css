@@ -36,7 +36,7 @@ strong {
 
 /* 链接样式 */
 a,
-a:vistied,
+a:visited,
 a:focus {
   color: #4b0082 !important;
   text-decoration: none;
