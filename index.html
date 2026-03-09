@@ -171,7 +171,7 @@
                       style="flex: 0 0 34%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
 
                       <!-- 视频缩略图（可点击） -->
-                      <video class="paper_teaser" style="cursor: pointer; max-width:56%; object-fit: contain;"
+                      <video class="paper_teaser" style="cursor: pointer; max-width:64%; object-fit: contain;"
                         poster="data/eye_tracking_poster.png" preload="none"
                         onclick="openVideoModal('data/eye_tracking_demo.mp4')">
                         <source src="data/eye_tracking_demo.mp4" type="video/mp4">
@@ -186,10 +186,13 @@
                         <span class="papertitle">Eye tracking and interaction in the virtual environment</span>
                       </a>
 
-                      <!-- course -->
+                      <span class="authors">
+                        Unity, Meta Quest Pro, Meta Movement SDK
+                      </span>
+
+                      <!-- tool -->
                       <span class="venue">
-                        <span style="background-color: #ffffff">&nbsp;Unity, Meta Quest Pro, Meta Movement
-                          SDK&nbsp;</span>
+                        <span style="background-color: #ffffff">&nbsp;2024&nbsp;</span>
                       </span>
 
                       <!-- tldr -->
@@ -221,11 +224,10 @@
                       var modal = document.getElementById("videoModal");
                       var video = document.getElementById("modalVideo");
 
-                      // 直接设置 video 的 src，而不是 source 标签
                       video.src = videoSrc;
 
                       // 先显示容器，再进行加载和播放
-                      modal.style.setProperty("display", "flex", "important"); // 这里用 JS 强行开启 flex
+                      modal.style.setProperty("display", "flex", "important");
 
                       video.load();
 
@@ -233,9 +235,9 @@
                       var playPromise = video.play();
                       if (playPromise !== undefined) {
                         playPromise.then(_ => {
-                          console.log("开始播放");
+                          console.log("play begins");
                         }).catch(error => {
-                          console.log("播放失败，可能是浏览器拦截:", error);
+                          console.log("fail:", error);
                         });
                       }
                     }
@@ -245,11 +247,11 @@
                       var video = document.getElementById("modalVideo");
 
                       video.pause();
-                      video.src = ""; // 彻底清除资源，防止后台继续下载或发声
+                      video.src = "";
                       modal.style.display = "none";
                     }
 
-                    // 额外增加：点击弹窗背景处关闭视频
+                    // 点击弹窗背景处关闭视频
                     window.onclick = function (event) {
                       var modal = document.getElementById("videoModal");
                       if (event.target == modal) {
@@ -309,10 +311,8 @@
                         <span class="papertitle">Introduction to Flow Matching and Diffusion Models</span>
                       </a>
 
-                      <!-- course -->
-                      <span class="venue">
-                        <span style="background-color: #ffffff">&nbsp;MIT Computer Science Class 6.S184: Generative AI
-                          with Stochastic Differential Equations (2025)&nbsp;</span>
+                      <span class="authors">
+                        MIT Computer Science Class 6.S184: Generative AI with Stochastic Differential Equations (2025)
                       </span>
 
                       <!-- tldr -->

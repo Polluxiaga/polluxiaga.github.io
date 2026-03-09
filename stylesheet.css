@@ -191,7 +191,7 @@ img.hoverZoomLink {
 
 .authors {
   display: block;
-  font-size: 10pt;
+  font-size: 11pt;
   color: #333333;
   font-style: italic;
 }
@@ -199,8 +199,8 @@ img.hoverZoomLink {
 .venue {
   display: block;
   font-size: 10pt;
-  font-weight: bold;
   color: #666666;
+  font-weight: bold;
 }
 
 .tldr {
@@ -208,7 +208,7 @@ img.hoverZoomLink {
   color: #666666;
   font-family: 'Lato';
   font-size: 10pt;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 /* 通用高亮文字背景 */
