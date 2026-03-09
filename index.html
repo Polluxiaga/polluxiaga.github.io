@@ -1,229 +1,369 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Zhecheng Yu's homepage</title>
 
-    <meta name="author" content="Zhecheng Yu">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  </head>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Zhecheng Yu's homepage</title>
 
-  <body>
-    <!-- MAIN CONTAINER: maximum width 800px -->
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody>
-        <tr style="padding:0px">
-          <td style="padding:0px">
-            
-            <!-- ================ -->
-            <!-- SECTION: Bio    -->
-            <!-- ================ -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr style="padding:0px">
-                  
-                  <!-- LEFT: Text -->
-                  <td style="padding:2%;width:70%;vertical-align:middle">
-                    <p class="name" style="text-align: center;">
-                      <span style="font-family: Lato, Verdana, Helvetica, sans-serif;">Zhecheng Yu</span> 余喆诚
-                    </p>
-                    <p>
-                      I'm a fourth-year undergraduate student supervised by 
-                      <a href='https://scholar.google.com/citations?user=60XG9FIAAAAJ&hl=en'>Prof. Yan Lyu</a> 
-                      at <a href='https://cs.seu.edu.cn/bajian/'>Training Base for Top Students in Computer Science</a>, 
-                      <a href='https://www.seu.edu.cn/'>Southeast University</a>, Nanjing, China. 
-                      I'm currently working as a visiting scholar with 
-                      <a href='https://scholar.google.com/citations?user=_bza0AoAAAAJ&hl=zh-CN'>Prof. Brian Y. Lim</a> 
-                      at <a href='https://research.nus.edu.sg/ubicomplab/'>NUS Ubicomp Lab</a>,
-                      <a href="https://nus.edu.sg/"> National University of Singapore</a>, Singapore.
-                      I'm interested in human-centered designs.
-                    </p>
-                    <p style="text-align:center">
-                      <a href="mailto:polluxiaga@gmail.com">Email</a> &nbsp;/&nbsp;
-                      <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
-                      <!--<a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;-->
-                      <a href="https://github.com/Polluxiaga/">Github</a>
-                    </p>
-                  </td>
-                  
-                  <!-- RIGHT: Avatar -->
-                  <td style="padding:2.5%;width:20%;max-width:20%">
-                    <a href="images/photo.jpg">
-                      <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/photo.jpg" class="hoverZoomLink">
-                    </a>
-                  </td>
-                  
-                </tr>
-              </tbody>
-            </table>
+  <meta name="author" content="Zhecheng Yu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <!-- =================== -->
-            <!-- SECTION: Research  -->
-            <!-- =================== -->
-            <section class = "rebio">
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:16px;width:100%;vertical-align:middle">
-                      <h2>Research</h2>
-                      <p>
-                      <span style="font-size: 12pt;"><span class="highlight">highlight</span> denotes first-author papers; <span style="color: #6f42c1;">purple</span> denotes supervisors; <sup>*</sup> denotes equal contributions; <sup>&dagger;</sup> denotes corresponding authors.</span>
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
 
-            <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr style="padding:0px">
-                  <td colspan="2" style="padding:0">
-                    
-                    <!-- PAPER ENTRY: Gaze2Nav -->
-                    <!-- UI: onmouseover/onmouseout -->
-                    <div class="paper-entry" onmouseover="gaze2nav_start()" onmouseout="gaze2nav_stop()">
-                      
-                      <script type="text/javascript">
-                        function gaze2nav_start() { document.getElementById('gaze2nav_arch').style.opacity = "1"; }
-                        function gaze2nav_stop() { document.getElementById('gaze2nav_arch').style.opacity = "0"; }
-                        gaze2nav_stop();
-                      </script>
+<body>
+  <!-- MAIN CONTAINER: maximum width 800px -->
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
 
-                      <!-- LEFT: image -->
-                      <div class="paper_image_col" style="flex: 0 0 34%;"> 
-                        
-                        <!-- onmouseover -->
-                        <div class="paper_stay" id="gaze2nav_arch">
-                          <img src="images/gaze2nav_arch.jpg" alt="arch">
-                        </div>
-                        
-                        <!-- onmouseout -->
-                        <img class="paper_teaser" src="images/gaze2nav_teaser.jpg" alt="teaser">
-                      
-                      </div>
-                    
-                      <!-- RIGHT: text -->
-                      <div class="paper-body highlight">
-                        <a href="papers/gazenav.pdf" target="_blank" onfocus="this.blur()">
-                          <span class="papertitle">Learning from Human Gaze: Human-like Robot Social Navigation in Dense Crowds</span>
-                        </a>
-                        
-                        <!-- author list -->
-                        <span class="authors">
-                          <span style="font-weight: bold;">Zhecheng Yu<sup>*</sup></span>, 
-                          <span style="color: #6f42c1;">Yan Lyu<sup>*</sup></span>, 
-                          Chen Yang, Tao Chen, Yishuang Zhang, Bo Ling, Peng Wang, Guanyu Gao, Weiwei Wu, 
-                          <span style="color: #6f42c1;">Brian Y. Lim<sup>&dagger;</sup></span>
-                        </span>
-                        
-                        <!-- venue -->
-                        <span class="venue">
-                          <span style="background-color: #ffffff">&nbsp;AAAI 2026&nbsp;</span>
-                        </span>
-                        
-                        <!-- tldr -->
-                        <span class="tldr">
-                          We introduce <strong>GazeNav</strong>, a real-world eye-tracking dataset in dense crowds, and propose <strong>Gaze2Nav</strong>, a navigation framework that mimics human gaze to identify socially salient pedestrians, achieving more human-like robot navigation.
-                        </span>
-                      </div>
-                      
-                    </div>
-                    <!-- END PAPER ENTRY -->
+          <!-- ================ -->
+          <!-- SECTION: Bio    -->
+          <!-- ================ -->
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
 
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-            <!-- ========================= -->
-            <!-- SECTION: Learning Notes  -->
-            <!-- ========================= -->
-            <section class = "rebio" style="margin-top: 40px;">
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                  <tr>
-                    <td style="padding:16px;width:100%;vertical-align:middle">
-                      <h2>Learning Notes</h2>
-                      <p>
-                      <span style="font-size: 12pt;">Here are my learning notes compiled based on various open-source materials and my personal understanding.</span>
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
-
-            <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr style="padding:0px">
-                  <td colspan="2" style="padding:0">
-                    
-                    <!-- NOTES ENTRY: mit 6.s184 -->
-                    <div class="paper-entry">
-
-                      <!-- LEFT: image -->
-                      <div class="paper_image_col" style="flex: 0 0 34%; display: flex; align-items: center; justify-content: center; overflow: hidden;"> 
-                        
-                        <!-- onmouseout -->
-                        <img class="paper_teaser" src="images/mit_6.s184.png" alt="teaser"
-                        style="height: 100%; width: auto; max-width: 55%; object-fit: contain; border-radius: 4px;">
-                      
-                      </div>
-                    
-                      <!-- RIGHT: text -->
-                      <div class="paper-body">
-                        <a href="https://yuzhecheng.notion.site/Flow-Matching-Diffusion-Models-27388bf1d73380719d93e36663b4f84d" target="_blank" onfocus="this.blur()">
-                          <span class="papertitle">Introduction to Flow Matching and Diffusion Models</span>
-                        </a>
-                        
-                        <!-- course -->
-                        <span class="venue">
-                          <span style="background-color: #ffffff">&nbsp;MIT Computer Science Class 6.S184: Generative AI with Stochastic Differential Equations&nbsp;</span>
-                        </span>
-                        
-                        <!-- tldr -->
-                        <span class="tldr">
-                          Diffusion and flow-based models have become the state of the art for generative AI across a wide range of data modalities, including images, videos, shapes, molecules, music, and more! This course aims to build up the mathematical framework underlying these models from first principles. At the end of the class, students will have built a toy image diffusion model from scratch, and along the way, will have gained hands-on experience with the mathematical toolbox of stochastic differential equations that is useful in many other fields. This course is ideal for students who want to develop a principled understanding of the theory and practice of generative AI.
-                        </span>
-                      </div>
-                      
-                    </div>
-                    <!-- END NOTES ENTRY -->
-
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- ================= -->
-            <!-- SECTION: Visitor -->
-            <!-- ================= -->
-            <section style="margin-top: 80px;">
-              <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=efe5ff&w=400&t=tt&d=d5Ckepu-Ol6c-04x9prtFYsRyTMzBlpYGLul6aEYC14&co=ffffff&cmo=6f42c1&cmn=4b0082&ct=4b0082'></script>
-            </section>
-
-            <!-- =================== -->
-            <!-- SECTION: Copyright -->
-            <!-- =================== -->
-            </tbody></table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-                <td style="padding:0px">
-                  <br>
-                  <p style="text-align:center;font-size:small; color: #666666;">
-                    &copy; Modify from <a href="https://github.com/jonbarron/jonbarron_website"><span style="font-size: small;">Jon Barron</span></a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead.
+                <!-- LEFT: Text -->
+                <td style="padding:2%;width:70%;vertical-align:middle">
+                  <p class="name" style="text-align: center;">
+                    <span style="font-family: Lato, Verdana, Helvetica, sans-serif;">Zhecheng Yu</span> 余喆诚
+                  </p>
+                  <p>
+                    I'm a fourth-year undergraduate student supervised by
+                    <a href='https://scholar.google.com/citations?user=60XG9FIAAAAJ&hl=en'>Prof. Yan Lyu</a>
+                    at <a href='https://cs.seu.edu.cn/bajian/'>Training Base for Top Students in Computer Science</a>,
+                    <a href='https://www.seu.edu.cn/'>Southeast University</a>, Nanjing, China.
+                    I'm currently working as a visiting scholar with
+                    <a href='https://scholar.google.com/citations?user=_bza0AoAAAAJ&hl=zh-CN'>Prof. Brian Y. Lim</a>
+                    at <a href='https://research.nus.edu.sg/ubicomplab/'>NUS Ubicomp Lab</a>,
+                    <a href="https://nus.edu.sg/"> National University of Singapore</a>, Singapore.
+                    I'm interested in human-centered designs.
+                  </p>
+                  <p style="text-align:center">
+                    <a href="mailto:polluxiaga@gmail.com">Email</a> &nbsp;/&nbsp;
+                    <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
+                    <!--<a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;-->
+                    <a href="https://github.com/Polluxiaga/">Github</a>
                   </p>
                 </td>
-              </tr>
-            </tbody></table>
 
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
+                <!-- RIGHT: Avatar -->
+                <td style="padding:2.5%;width:20%;max-width:20%">
+                  <a href="images/photo.jpg">
+                    <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
+                      src="images/photo.jpg" class="hoverZoomLink">
+                  </a>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- =================== -->
+          <!-- SECTION: Research  -->
+          <!-- =================== -->
+          <section class="rebio">
+            <table
+              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Research</h2>
+                    <p>
+                      <span style="font-size: 12pt;"><span class="highlight">highlight</span> denotes first-author
+                        papers; <span style="color: #6f42c1;">purple</span> denotes supervisors; <sup>*</sup> denotes
+                        equal contributions; <sup>&dagger;</sup> denotes corresponding authors.</span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td colspan="2" style="padding:0">
+
+                  <!-- PAPER ENTRY: Gaze2Nav -->
+                  <div class="paper-entry">
+                    <div class="paper_image_col" style="flex: 0 0 34%;">
+
+                      <div class="paper_stay" id="gaze2nav_arch">
+                        <img src="images/gaze2nav_arch.jpg" alt="arch">
+                      </div>
+
+                      <img class="paper_teaser" src="images/gaze2nav_teaser.jpg" alt="teaser">
+
+                    </div>
+
+                    <div class="paper-body highlight">
+                      <a href="papers/gazenav.pdf" target="_blank" onfocus="this.blur()">
+                        <span class="papertitle">Learning from Human Gaze: Human-like Robot Social Navigation in Dense
+                          Crowds</span>
+                      </a>
+
+                      <span class="authors">
+                        <span style="font-weight: bold;">Zhecheng Yu<sup>*</sup></span>,
+                        <span style="color: #6f42c1;">Yan Lyu<sup>*</sup></span>,
+                        Chen Yang, Tao Chen, Yishuang Zhang, Bo Ling, Peng Wang, Guanyu Gao, Weiwei Wu,
+                        <span style="color: #6f42c1;">Brian Y. Lim<sup>&dagger;</sup></span>
+                      </span>
+
+                      <!-- venue -->
+                      <span class="venue">
+                        <span style="background-color: #ffffff">&nbsp;AAAI 2026&nbsp;</span>
+                      </span>
+
+                      <!-- tldr -->
+                      <span class="tldr">
+                        We introduce <strong>GazeNav</strong>, a real-world eye-tracking dataset in dense crowds, and
+                        propose <strong>Gaze2Nav</strong>, a navigation framework that mimics human gaze to identify
+                        socially salient pedestrians, achieving more human-like robot navigation.
+                      </span>
+                    </div>
+
+                  </div>
+                  <!-- END PAPER ENTRY -->
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- =================== -->
+          <!-- SECTION: Projects  -->
+          <!-- ====== ============ -->
+          <section class="rebio" style="margin-top: 40px;">
+            <table
+              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Projects</h2>
+                    <p>
+                      <span style="font-size: 12pt;">Here are projects built based on my personal research
+                        interests.</span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td colspan="2" style="padding:0">
+
+                  <!-- PROJECTS ENTRY: quest pro eye tracking -->
+                  <div class="paper-entry">
+
+                    <!-- LEFT: image -->
+                    <div class="paper_image_col"
+                      style="flex: 0 0 34%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+
+                      <!-- 视频缩略图（可点击） -->
+                      <video class="paper_teaser" style="cursor: pointer;"
+                        onclick="openVideoModal('data/eye_tracking_demo.mp4')">
+                        <source src="data/eye_tracking_demo.mp4" type="video/mp4">
+                      </video>
+
+                    </div>
+
+                    <!-- RIGHT: text -->
+                    <div class="paper-body">
+                      <a href="https://yuzhecheng.notion.site/Flow-Matching-Diffusion-Models-27388bf1d73380719d93e36663b4f84d"
+                        target="_blank" onfocus="this.blur()">
+                        <span class="papertitle">Eye tracking and interaction in the virtual environment</span>
+                      </a>
+
+                      <!-- course -->
+                      <span class="venue">
+                        <span style="background-color: #ffffff">&nbsp;Unity, Meta Quest Pro, Meta Movement
+                          SDK&nbsp;</span>
+                      </span>
+
+                      <!-- tldr -->
+                      <span class="tldr">
+                        I built an egocentric virtual-world eye tracking system supporting visualization of gaze and
+                        hover (or select) behavior.
+                      </span>
+                    </div>
+
+                  </div>
+                  <!-- END PROJECTS ENTRY -->
+
+                  <!-- pop-up window -->
+                  <div id="videoModal" class="video-modal">
+                    <div class="video-modal-content">
+                      <span class="video-modal-close" onclick="closeVideoModal()">&times;</span>
+                      <video id="modalVideo" controls style="width:100%; border-radius: 8px;">
+                        Your browser does not support video playback.
+                      </video>
+                    </div>
+                  </div>
+
+                  <script type="text/javascript">
+                    function openVideoModal(videoSrc) {
+                      var modal = document.getElementById("videoModal");
+                      var video = document.getElementById("modalVideo");
+
+                      // 直接设置 video 的 src，而不是 source 标签
+                      video.src = videoSrc;
+
+                      // 先显示容器，再进行加载和播放
+                      modal.style.setProperty("display", "flex", "important"); // 这里用 JS 强行开启 flex
+
+                      video.load();
+
+                      // 处理播放 Promise
+                      var playPromise = video.play();
+                      if (playPromise !== undefined) {
+                        playPromise.then(_ => {
+                          console.log("开始播放");
+                        }).catch(error => {
+                          console.log("播放失败，可能是浏览器拦截:", error);
+                        });
+                      }
+                    }
+
+                    function closeVideoModal() {
+                      var modal = document.getElementById("videoModal");
+                      var video = document.getElementById("modalVideo");
+
+                      video.pause();
+                      video.src = ""; // 彻底清除资源，防止后台继续下载或发声
+                      modal.style.display = "none";
+                    }
+
+                    // 额外增加：点击弹窗背景处关闭视频
+                    window.onclick = function (event) {
+                      var modal = document.getElementById("videoModal");
+                      if (event.target == modal) {
+                        closeVideoModal();
+                      }
+                    }
+                  </script>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- ========================= -->
+          <!-- SECTION: Learning Notes  -->
+          <!-- ========================= -->
+          <section class="rebio" style="margin-top: 40px;">
+            <table
+              style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              <tbody>
+                <tr>
+                  <td style="padding:16px;width:100%;vertical-align:middle">
+                    <h2>Learning Notes</h2>
+                    <p>
+                      <span style="font-size: 12pt;">Here are my learning notes compiled based on various open-source
+                        materials and my personal understanding.</span>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td colspan="2" style="padding:0">
+
+                  <!-- NOTES ENTRY: mit 6.s184 -->
+                  <div class="paper-entry">
+
+                    <!-- LEFT: image -->
+                    <div class="paper_image_col"
+                      style="flex: 0 0 34%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+
+                      <!-- onmouseout -->
+                      <img class="paper_teaser" src="images/mit_6.s184.png" alt="teaser"
+                        style="height: 100%; width: auto; max-width: 55%; object-fit: contain; border-radius: 4px;">
+
+                    </div>
+
+                    <!-- RIGHT: text -->
+                    <div class="paper-body">
+                      <a href="https://yuzhecheng.notion.site/Flow-Matching-Diffusion-Models-27388bf1d73380719d93e36663b4f84d"
+                        target="_blank" onfocus="this.blur()">
+                        <span class="papertitle">Introduction to Flow Matching and Diffusion Models</span>
+                      </a>
+
+                      <!-- course -->
+                      <span class="venue">
+                        <span style="background-color: #ffffff">&nbsp;MIT Computer Science Class 6.S184: Generative AI
+                          with Stochastic Differential Equations&nbsp;</span>
+                      </span>
+
+                      <!-- tldr -->
+                      <span class="tldr">
+                        Diffusion and flow-based models have become the state of the art for generative AI across a wide
+                        range of data modalities, including images, videos, shapes, molecules, music, and more! This
+                        course aims to build up the mathematical framework underlying these models from first
+                        principles. At the end of the class, students will have built a toy image diffusion model from
+                        scratch, and along the way, will have gained hands-on experience with the mathematical toolbox
+                        of stochastic differential equations that is useful in many other fields. This course is ideal
+                        for students who want to develop a principled understanding of the theory and practice of
+                        generative AI.
+                      </span>
+                    </div>
+
+                  </div>
+                  <!-- END NOTES ENTRY -->
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- ================= -->
+          <!-- SECTION: Visitor -->
+          <!-- ================= -->
+          <section style="margin-top: 80px;">
+            <script type='text/javascript' id='mapmyvisitors'
+              src='https://mapmyvisitors.com/map.js?cl=efe5ff&w=400&t=tt&d=d5Ckepu-Ol6c-04x9prtFYsRyTMzBlpYGLul6aEYC14&co=ffffff&cmo=6f42c1&cmn=4b0082&ct=4b0082'></script>
+          </section>
+
+          <!-- =================== -->
+          <!-- SECTION: Copyright -->
+          <!-- =================== -->
+    </tbody>
+  </table>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <td style="padding:0px">
+          <br>
+          <p style="text-align:center;font-size:small; color: #666666;">
+            &copy; Modify from <a href="https://github.com/jonbarron/jonbarron_website"><span
+                style="font-size: small;">Jon Barron</span></a>. <strong>Do not</strong> scrape the HTML from this page
+            itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code
+            instead.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  </td>
+  </tr>
+  </tbody>
+  </table>
+</body>
+
 </html>
