@@ -171,7 +171,7 @@
                       style="flex: 0 0 34%; display: flex; align-items: center; justify-content: center; overflow: hidden;">
 
                       <!-- 视频缩略图（可点击） -->
-                      <video class="paper_teaser" style="cursor: pointer;" poster="data/eye_tracking_poster.png"
+                      <video class="paper_teaser" style="cursor: pointer; max-width:56%; object-fit: contain;" poster="data/eye_tracking_poster.png"
                         preload="none" onclick="openVideoModal('data/eye_tracking_demo.mp4')">
                         <source src="data/eye_tracking_demo.mp4" type="video/mp4">
                       </video>
@@ -193,8 +193,8 @@
 
                       <!-- tldr -->
                       <span class="tldr">
-                        I built an egocentric virtual-world eye tracking system supporting visualization of gaze and
-                        hover (or select) behavior.
+                        This project implements an egocentric virtual-world eye tracking system that supports real-time visualization of gaze and hover/select behavior. Built on the Meta Quest Pro headset and leveraging the Meta Movement SDK, it is developed in Unity and can also be integrated with XR, enabling researchers and developers to analyze user attention and interaction patterns with objects within immersive virtual environments. <br>
+                        👈 Click and play a video demo.
                       </span>
                     </div>
 
