@@ -125,6 +125,13 @@ img.hoverZoomLink {
   border-radius: 2px;
 }
 
+.paper_stay:empty {
+  opacity: 0 !important;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+
 /* 交互：鼠标悬停在条目上时显示顶图 */
 .paper-entry:hover .paper_stay {
   opacity: 1;
