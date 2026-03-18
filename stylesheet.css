@@ -95,34 +95,39 @@ img.hoverZoomLink {
   height: auto;
   display: block;
   border-radius: 2px;
-  transition: opacity 0.3s ease-in-out;
 }
 
 /* 悬停显示的顶图容器 (Stay Image) */
 .paper_stay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  background-color: #ffffff; 
+  border-radius: 2px;
+  z-index: 2;
 }
 
 /* 悬停图内部 img */
 .paper_stay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  object-fit: contain; 
+  display: block;
   border-radius: 2px;
 }
 
 /* 交互：鼠标悬停在条目上时显示顶图 */
 .paper-entry:hover .paper_stay {
   opacity: 1;
-}
-.paper-entry:hover .paper_teaser{
-  opacity: 0;
 }
 
 
