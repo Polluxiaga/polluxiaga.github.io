@@ -91,6 +91,8 @@ img.hoverZoomLink {
 
 /* 默认显示的底图 (Teaser) */
 .paper_teaser {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: auto;
   display: block;
@@ -108,7 +110,7 @@ img.hoverZoomLink {
   transition: opacity 0.3s ease-in-out;
   background-color: #ffffff; 
   border-radius: 2px;
-  z-index: 2;
+  z-index: 5;
 }
 
 /* 悬停图内部 img */
@@ -123,12 +125,8 @@ img.hoverZoomLink {
   object-fit: contain; 
   display: block;
   border-radius: 2px;
-}
-
-.paper_stay:empty {
-  opacity: 0 !important;
-  background-color: transparent;
-  pointer-events: none;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
 }
 
 
