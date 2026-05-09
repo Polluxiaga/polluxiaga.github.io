@@ -14,7 +14,7 @@
 
 <body>
   <!-- MAIN CONTAINER: maximum width 800px -->
-  <table
+  <table class="page-shell"
     style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding:0px">
@@ -23,13 +23,13 @@
           <!-- ================ -->
           <!-- SECTION: Bio    -->
           <!-- ================ -->
-          <table
+          <table class="bio-table"
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr style="padding:0px">
+              <tr class="bio-row" style="padding:0px">
 
                 <!-- LEFT: Text -->
-                <td style="padding:2%;width:70%;vertical-align:middle">
+                <td class="bio-text" style="padding:2%;width:70%;vertical-align:middle">
                   <p class="name" style="text-align: center;">
                     <span style="font-family: Lato, Verdana, Helvetica, sans-serif;">Zhecheng Yu</span> 余喆诚
                   </p>
@@ -46,7 +46,7 @@
                     <a href="https://knowinai.com/">Knowin AI</a>, Shenzhen, China.
                     I'm interested in human-centered designs.
                   </p>
-                  <p style="text-align:center">
+                  <p class="contact-links" style="text-align:center">
                     <a href="mailto:polluxiaga@gmail.com">Email</a> &nbsp;/&nbsp;
                     <a href="data/cv.pdf">CV</a> &nbsp;/&nbsp;
                     <!--<a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;-->
@@ -55,7 +55,7 @@
                 </td>
 
                 <!-- RIGHT: Avatar -->
-                <td style="padding:2.5%;width:20%;max-width:20%">
+                <td class="bio-photo" style="padding:2.5%;width:20%;max-width:20%">
                   <a href="images/photo.jpg">
                     <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo"
                       src="images/photo.jpg" class="hoverZoomLink">
@@ -121,7 +121,7 @@
 
                       <!-- venue -->
                       <span class="venue">
-                        <span style="background-color: #ffffff">&nbsp;AAAI 2026&nbsp;</span>
+                        <span class="venue-badge">&nbsp;AAAI 2026&nbsp;</span>
                       </span>
 
                       <!-- tldr -->
@@ -151,7 +151,7 @@
                   <td style="padding:16px;width:100%;vertical-align:middle">
                     <h2>Projects</h2>
                     <p>
-                      <span style="font-size: 12pt;">Here are my projects built based on my interests.</span>
+                      <span style="font-size: 12pt;">Here are my projects built based on my interests or engineering needs.</span>
                     </p>
                   </td>
                 </tr>
@@ -194,7 +194,7 @@
 
                       <!-- year -->
                       <span class="venue">
-                        <span style="background-color: #ffffff">&nbsp;2024&nbsp;</span>
+                        <span class="venue-badge">&nbsp;2024&nbsp;</span>
                       </span>
 
                       <!-- tldr -->
@@ -319,7 +319,7 @@
 
                       <!-- year -->
                       <span class="venue">
-                        <span style="background-color: #ffffff">&nbsp;2025&nbsp;</span>
+                        <span class="venue-badge">&nbsp;2025&nbsp;</span>
                       </span>
 
                       <!-- tldr -->
@@ -354,7 +354,7 @@
 
                       <!-- year -->
                       <span class="venue">
-                        <span style="background-color: #ffffff">&nbsp;2026&nbsp;</span>
+                        <span class="venue-badge">&nbsp;2026&nbsp;</span>
                       </span>
 
                       <!-- tldr -->
@@ -377,7 +377,7 @@
           <!-- ================= -->
           <!-- SECTION: Visitor -->
           <!-- ================= -->
-          <section style="margin-top: 80px;">
+          <section class="visitor-map" style="margin-top: 80px;">
             <script type='text/javascript' id='mapmyvisitors'
               src='https://mapmyvisitors.com/map.js?cl=efe5ff&amp;w=400&amp;t=tt&amp;d=d5Ckepu-Ol6c-04x9prtFYsRyTMzBlpYGLul6aEYC14&amp;co=ffffff&amp;cmo=6f42c1&amp;cmn=4b0082&amp;ct=4b0082'></script>
           </section>
@@ -385,15 +385,14 @@
           <!-- =================== -->
           <!-- SECTION: Copyright -->
           <!-- =================== -->
-          <table
+          <table class="footer-table"
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:0px">
                   <br>
                   <p style="text-align:center;font-size:small; color: #666666;">
-                    &copy; Modify from <a href="https://github.com/jonbarron/jonbarron_website"><span
-                        style="font-size: small;">Jon Barron</span></a>. <strong>Do not</strong> scrape the HTML from
+                    &copy; Modify from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>. <strong>Do not</strong> scrape the HTML from
                     this page itself, as it includes analytics tags that you do not want on your own website &mdash; use
                     the github code instead.
                   </p>
