@@ -35,15 +35,15 @@
                   </p>
                   <p>
                     I'm a fourth-year undergraduate student supervised by
-                    <a href='https://scholar.google.com/citations?user=60XG9FIAAAAJ&hl=en'>Prof. Yan Lyu</a>
+                    <a href='https://scholar.google.com/citations?user=60XG9FIAAAAJ&amp;hl=en'>Prof. Yan Lyu</a>
                     at <a href='https://cs.seu.edu.cn/bajian/'>Training Base for Top Students in Computer Science</a>,
                     <a href='https://www.seu.edu.cn/'>Southeast University</a>, Nanjing, China.
                     I was a visiting scholar working with
-                    <a href='https://scholar.google.com/citations?user=_bza0AoAAAAJ&hl=zh-CN'>Prof. Brian Y. Lim</a>
+                    <a href='https://scholar.google.com/citations?user=_bza0AoAAAAJ&amp;hl=zh-CN'>Prof. Brian Y. Lim</a>
                     at <a href='https://research.nus.edu.sg/ubicomplab/'>NUS Ubicomp Lab</a>,
                     <a href="https://nus.edu.sg/"> National University of Singapore</a>, Singapore.
-                    I'm currently an AI researcher (internship)
-                    at <a href="https://knowinai.com/">Knowin AI</a>, Shenzhen, China.
+                    I'm currently an AI researcher (internship) working in the embodied perception group,
+                    <a href="https://knowinai.com/">Knowin AI</a>, Shenzhen, China.
                     I'm interested in human-centered designs.
                   </p>
                   <p style="text-align:center">
@@ -106,7 +106,7 @@
                     </div>
 
                     <div class="paper-body highlight">
-                      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/38941" target="_blank"
+                      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/38941" target="_blank" rel="noopener"
                         onfocus="this.blur()">
                         <span class="papertitle">Learning from Human Gaze: Human-like Robot Social Navigation in Dense
                           Crowds</span>
@@ -183,7 +183,8 @@
 
                     <!-- RIGHT: text -->
                     <div class="paper-body">
-                      <a href="https://github.com/Polluxiaga/VR_Eye_Tracking" target="_blank" onfocus="this.blur()">
+                      <a href="https://github.com/Polluxiaga/VR_Eye_Tracking" target="_blank" rel="noopener"
+                        onfocus="this.blur()">
                         <span class="papertitle">Eye tracking and interaction in the virtual environment</span>
                       </a>
 
@@ -203,7 +204,7 @@
                         leveraging the Meta Movement SDK, it is developed in Unity and can also be integrated with XR,
                         enabling researchers and developers to analyze user attention and interaction patterns with
                         objects within immersive virtual environments. <br>
-                        👈 Click and play a video demo.
+                        👈 Click to play a video demo.
                       </span>
                     </div>
 
@@ -253,12 +254,12 @@
                     }
 
                     // 点击弹窗背景处关闭视频
-                    window.onclick = function (event) {
+                    window.addEventListener("click", function (event) {
                       var modal = document.getElementById("videoModal");
-                      if (event.target == modal) {
+                      if (event.target === modal) {
                         closeVideoModal();
                       }
-                    }
+                    });
                   </script>
 
                 </td>
@@ -308,7 +309,7 @@
                     <!-- RIGHT: text -->
                     <div class="paper-body">
                       <a href="https://yuzhecheng.notion.site/Flow-Matching-Diffusion-Models-27388bf1d73380719d93e36663b4f84d"
-                        target="_blank" onfocus="this.blur()">
+                        target="_blank" rel="noopener" onfocus="this.blur()">
                         <span class="papertitle">Introduction to Flow Matching and Diffusion Models</span>
                       </a>
 
@@ -334,36 +335,39 @@
                       </span>
                     </div>
 
-                    <!-- NOTES ENTRY: embodied ai -->
-                    <div class="paper-entry">
+                  </div>
+                  <!-- END NOTES ENTRY -->
 
-                      <!-- RIGHT: text -->
-                      <div class="paper-body">
-                        <a href="https://yuzhecheng.notion.site/Robot-Foundation-Models-32188bf1d73380ffbe3fc023e820c81f?pvs=74"
-                          target="_blank" onfocus="this.blur()">
-                          <span class="papertitle">Robot Foundation Models</span>
-                        </a>
+                  <!-- NOTES ENTRY: embodied ai -->
+                  <div class="paper-entry">
 
-                        <span class="authors">
-                          Physical Intelligence, NVIDIA, ...
-                        </span>
+                    <!-- RIGHT: text -->
+                    <div class="paper-body">
+                      <a href="https://yuzhecheng.notion.site/Robot-Foundation-Models-32188bf1d73380ffbe3fc023e820c81f?pvs=74"
+                        target="_blank" rel="noopener" onfocus="this.blur()">
+                        <span class="papertitle">Robot Foundation Models</span>
+                      </a>
 
-                        <!-- year -->
-                        <span class="venue">
-                          <span style="background-color: #ffffff">&nbsp;2026&nbsp;</span>
-                        </span>
+                      <span class="authors">
+                        Physical Intelligence, NVIDIA, ...
+                      </span>
 
-                        <!-- tldr -->
-                        <span class="tldr">
-                          This note covers the latest advances in robot foundation models, including
-                          Vision-Language-Action (VLA) architectures and World Action Models (WAMs). They cover how
-                          large-scale pre-training on diverse data enables generalist robot policies and methods for
-                          improving real-world manipulation and dexterity.
-                        </span>
-                      </div>
+                      <!-- year -->
+                      <span class="venue">
+                        <span style="background-color: #ffffff">&nbsp;2026&nbsp;</span>
+                      </span>
 
+                      <!-- tldr -->
+                      <span class="tldr">
+                        This note covers the latest advances in robot foundation models, including
+                        Vision-Language-Action (VLA) architectures and World Action Models (WAMs). They cover how
+                        large-scale pre-training on diverse data enables generalist robot policies and methods for
+                        improving real-world manipulation and dexterity.
+                      </span>
                     </div>
-                    <!-- END NOTES ENTRY -->
+
+                  </div>
+                  <!-- END NOTES ENTRY -->
 
                 </td>
               </tr>
@@ -375,33 +379,32 @@
           <!-- ================= -->
           <section style="margin-top: 80px;">
             <script type='text/javascript' id='mapmyvisitors'
-              src='https://mapmyvisitors.com/map.js?cl=efe5ff&w=400&t=tt&d=d5Ckepu-Ol6c-04x9prtFYsRyTMzBlpYGLul6aEYC14&co=ffffff&cmo=6f42c1&cmn=4b0082&ct=4b0082'></script>
+              src='https://mapmyvisitors.com/map.js?cl=efe5ff&amp;w=400&amp;t=tt&amp;d=d5Ckepu-Ol6c-04x9prtFYsRyTMzBlpYGLul6aEYC14&amp;co=ffffff&amp;cmo=6f42c1&amp;cmn=4b0082&amp;ct=4b0082'></script>
           </section>
 
           <!-- =================== -->
           <!-- SECTION: Copyright -->
           <!-- =================== -->
-    </tbody>
-  </table>
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:0px">
-          <br>
-          <p style="text-align:center;font-size:small; color: #666666;">
-            &copy; Modify from <a href="https://github.com/jonbarron/jonbarron_website"><span
-                style="font-size: small;">Jon Barron</span></a>. <strong>Do not</strong> scrape the HTML from this page
-            itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code
-            instead.
-          </p>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:0px">
+                  <br>
+                  <p style="text-align:center;font-size:small; color: #666666;">
+                    &copy; Modify from <a href="https://github.com/jonbarron/jonbarron_website"><span
+                        style="font-size: small;">Jon Barron</span></a>. <strong>Do not</strong> scrape the HTML from
+                    this page itself, as it includes analytics tags that you do not want on your own website &mdash; use
+                    the github code instead.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
         </td>
       </tr>
     </tbody>
-  </table>
-
-  </td>
-  </tr>
-  </tbody>
   </table>
 </body>
 
