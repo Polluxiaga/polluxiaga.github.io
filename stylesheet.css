@@ -3,16 +3,49 @@
    ========================================================================== */
 :root {
   --bg: #fbfbfd;
+  --bg-top: #f7f6fb;
   --surface: #ffffff;
   --surface-soft: #f7f8fb;
+  --image-surface: #ffffff;
   --text: #28242c;
+  --text-strong: #201c27;
   --muted: #514b59;
   --line: #e8e3ee;
+  --image-line: #ece8f1;
   --accent: #5a3f9f;
   --accent-strong: #3f2a7a;
   --accent-soft: #f2edf9;
   --accent-wash: #fbf9ff;
+  --highlight-fade: rgba(255, 255, 255, 0.75);
+  --badge-bg: #f6f2fb;
+  --badge-border: #e0d7ef;
+  --badge-text: #58398e;
+  --footer-text: #77717f;
   --shadow: 0 12px 28px rgba(53, 43, 72, 0.08);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #15131a;
+  --bg-top: #271a38;
+  --surface: #1d1a24;
+  --surface-soft: #23202b;
+  --image-surface: #ffffff;
+  --text: #edeaf2;
+  --text-strong: #fbf8ff;
+  --muted: #c7bfce;
+  --line: #373141;
+  --image-line: #4b4358;
+  --accent: #c4a7ff;
+  --accent-strong: #e1d2ff;
+  --accent-soft: #30253e;
+  --accent-wash: #211b2a;
+  --highlight-fade: rgba(29, 26, 36, 0.75);
+  --badge-bg: #30253e;
+  --badge-border: #5a4a73;
+  --badge-text: #d9c7ff;
+  --footer-text: #aaa1b4;
+  --shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
 }
 
 * {
@@ -27,7 +60,7 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    linear-gradient(180deg, #f7f6fb 0, var(--bg) 320px),
+    linear-gradient(180deg, var(--bg-top) 0, var(--bg) 320px),
     var(--bg);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -88,6 +121,47 @@ button:focus-visible {
   border-radius: 6px;
 }
 
+.theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 22px;
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 78px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text-strong);
+  background: var(--surface);
+  box-shadow: 0 8px 22px rgba(53, 43, 72, 0.08);
+  cursor: pointer;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.theme-toggle:hover {
+  color: var(--accent-strong);
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.theme-toggle-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: inset -4px -2px 0 var(--surface);
+}
+
+html[data-theme="dark"] .theme-toggle-icon {
+  box-shadow: 0 0 0 2px rgba(196, 167, 255, 0.18);
+}
+
 
 /* ==========================================================================
    2. Profile Section
@@ -117,7 +191,7 @@ button:focus-visible {
 .name {
   padding-top: 12px;
   margin: 0 0 18px;
-  color: #201c27;
+  color: var(--text-strong);
   font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 38px;
   font-weight: 650;
@@ -128,9 +202,17 @@ button:focus-visible {
   font-family: inherit !important;
 }
 
+.name .name-cn {
+  margin-left: 8px;
+  font-family: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "STSong", "SimSun", serif !important;
+  font-size: 0.92em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
 .bio-text p:not(.name):not(.contact-links) {
   max-width: 710px;
-  color: #34303a;
+  color: var(--text);
 }
 
 .contact-links {
@@ -188,7 +270,7 @@ h2 {
   align-items: center;
   gap: 14px;
   margin: 0;
-  color: #1f1b26;
+  color: var(--text-strong);
   font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 21px;
   font-weight: 720;
@@ -236,9 +318,9 @@ h2::after {
   min-height: 210px;
   padding: 8px;
   overflow: hidden;
-  border: 1px solid #ece8f1;
+  border: 1px solid var(--image-line);
   border-radius: 8px;
-  background: var(--surface);
+  background: var(--image-surface);
 }
 
 .paper_teaser {
@@ -261,7 +343,7 @@ h2::after {
   left: 8px;
   opacity: 0;
   border-radius: 6px;
-  background-color: var(--surface);
+  background-color: var(--image-surface);
   transition: opacity 0.28s ease-in-out;
 }
 
@@ -298,7 +380,7 @@ h2::after {
   padding: 12px 14px;
   border-left: 3px solid rgba(90, 63, 159, 0.55);
   border-radius: 8px;
-  background: linear-gradient(90deg, var(--accent-soft), rgba(255, 255, 255, 0.75));
+  background: linear-gradient(90deg, var(--accent-soft), var(--highlight-fade));
 }
 
 
@@ -360,7 +442,7 @@ h2::after {
    ========================================================================== */
 .papertitle {
   display: block;
-  color: #231f2a;
+  color: var(--text-strong);
   font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
   font-weight: 720;
@@ -373,7 +455,7 @@ h2::after {
 
 .authors {
   display: block;
-  color: #494450;
+  color: var(--muted);
   font-size: 14px;
   font-style: italic;
   line-height: 1.45;
@@ -392,10 +474,10 @@ h2::after {
   align-items: center;
   min-height: 22px;
   padding: 1px 7px;
-  border: 1px solid #e0d7ef;
+  border: 1px solid var(--badge-border);
   border-radius: 6px;
-  color: #58398e;
-  background-color: #f6f2fb;
+  color: var(--badge-text);
+  background-color: var(--badge-bg);
   font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 12px;
   font-weight: 720;
@@ -426,9 +508,25 @@ span.highlight {
   text-align: center;
 }
 
+.visitor-map-widget {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--surface);
+  transition: background-color 180ms ease, filter 180ms ease;
+}
+
+html[data-theme="dark"] .visitor-map-widget {
+  background: #20172b;
+}
+
+html[data-theme="dark"] .visitor-map-widget > :not(script) {
+  filter: invert(0.92) hue-rotate(180deg) saturate(0.85) brightness(0.82);
+}
+
 .footer-table p {
   margin-top: 18px;
-  color: #77717f !important;
+  color: var(--footer-text) !important;
   font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 12px !important;
   line-height: 1.5;
@@ -460,6 +558,14 @@ span.highlight {
 
   .page-shell {
     padding: 24px 0 28px;
+  }
+
+  .theme-toggle {
+    top: 10px;
+    right: 12px;
+    min-width: 70px;
+    padding: 6px 9px;
+    font-size: 12px;
   }
 
   .bio-row {
