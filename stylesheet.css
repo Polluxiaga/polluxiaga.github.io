@@ -511,13 +511,15 @@ span.highlight {
 .visitor-map-widget {
   display: inline-block;
   padding: 8px;
+  border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
   transition: background-color 180ms ease, filter 180ms ease;
 }
 
 html[data-theme="dark"] .visitor-map-widget {
-  background: #20172b;
+  border-color: var(--bg);
+  background: var(--bg);
 }
 
 html[data-theme="dark"] .visitor-map-widget > :not(script) {
