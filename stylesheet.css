@@ -21,6 +21,8 @@
   --badge-border: #e0d7ef;
   --badge-text: #58398e;
   --footer-text: #77717f;
+  --visitor-map-bg: var(--bg);
+  --visitor-map-border: var(--bg-top);
   --shadow: 0 12px 28px rgba(53, 43, 72, 0.08);
 }
 
@@ -45,6 +47,8 @@ html[data-theme="dark"] {
   --badge-border: #5a4a73;
   --badge-text: #d9c7ff;
   --footer-text: #aaa1b4;
+  --visitor-map-bg: var(--bg);
+  --visitor-map-border: var(--bg-top);
   --shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
 }
 
@@ -208,7 +212,7 @@ html[data-theme="dark"] .theme-toggle-icon {
 
 .name .name-cn {
   margin-left: 10px;
-  font-family: "Xingkai SC", "STXingkai", "Kaiti SC", "STKaiti", "HanziPen SC", "Songti SC", serif !important;
+  font-family: "Xingkai SC", "STXingkai", "HanziPen SC", "Kaiti SC", "STKaiti", "KaiTi", "楷体", "DFKai-SB", "LXGW WenKai", "FangSong", "仿宋", cursive, serif !important;
   font-size: 1em;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -515,15 +519,10 @@ span.highlight {
 .visitor-map-widget {
   display: inline-block;
   padding: 8px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--visitor-map-border);
   border-radius: 8px;
-  background: var(--surface);
+  background: var(--visitor-map-bg);
   transition: background-color 180ms ease, filter 180ms ease;
-}
-
-html[data-theme="dark"] .visitor-map-widget {
-  border-color: var(--bg);
-  background: var(--bg);
 }
 
 html[data-theme="dark"] .visitor-map-widget > :not(script) {
