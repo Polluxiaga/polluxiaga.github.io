@@ -121,7 +121,8 @@
                 <td colspan="2" style="padding:0">
 
                   <!-- PAPER ENTRY: Gaze2Nav -->
-                  <div class="paper-entry">
+                  <div class="paper-entry" data-href="https://ojs.aaai.org/index.php/AAAI/article/view/38941"
+                    data-target="_blank" role="link" tabindex="0">
                     <div class="paper_image_col" style="flex: 0 0 34%;">
 
                       <div class="paper_stay" id="gaze2nav_arch">
@@ -193,7 +194,8 @@
                 <td colspan="2" style="padding:0">
 
                   <!-- PROJECTS ENTRY: quest pro eye tracking -->
-                  <div class="paper-entry">
+                  <div class="paper-entry" data-href="https://github.com/Polluxiaga/VR_Eye_Tracking"
+                    data-target="_blank" role="link" tabindex="0">
 
                     <!-- LEFT: image -->
                     <div class="paper_image_col"
@@ -321,6 +323,44 @@
                     }());
                   </script>
 
+                  <script>
+                    (function () {
+                      function openEntry(entry) {
+                        var href = entry.getAttribute("data-href");
+                        var target = entry.getAttribute("data-target");
+                        if (!href) {
+                          return;
+                        }
+
+                        if (target === "_blank") {
+                          var newWindow = window.open(href, "_blank", "noopener");
+                          if (newWindow) {
+                            newWindow.opener = null;
+                          }
+                        } else {
+                          window.location.href = href;
+                        }
+                      }
+
+                      document.addEventListener("click", function (event) {
+                        var entry = event.target.closest(".paper-entry[data-href]");
+                        if (!entry || event.target.closest("a, button, video")) {
+                          return;
+                        }
+                        openEntry(entry);
+                      });
+
+                      document.addEventListener("keydown", function (event) {
+                        var entry = event.target.closest(".paper-entry[data-href]");
+                        if (!entry || (event.key !== "Enter" && event.key !== " ")) {
+                          return;
+                        }
+                        event.preventDefault();
+                        openEntry(entry);
+                      });
+                    }());
+                  </script>
+
                 </td>
               </tr>
             </tbody>
@@ -353,7 +393,9 @@
                 <td colspan="2" style="padding:0">
 
                   <!-- NOTES ENTRY: mit 6.s184 -->
-                  <div class="paper-entry">
+                  <div class="paper-entry"
+                    data-href="https://yuzhecheng.notion.site/Flow-Matching-Diffusion-Models-27388bf1d73380719d93e36663b4f84d"
+                    data-target="_blank" role="link" tabindex="0">
 
                     <!-- LEFT: image -->
                     <div class="paper_image_col"
@@ -386,9 +428,7 @@
                         Diffusion and flow-based models have become the state of the art for generative AI across a wide
                         range of data modalities, including images, videos, shapes, molecules, music, and more! This
                         course aims to build up the mathematical framework underlying these models from first
-                        principles. At the end of the class, students will have built a toy image diffusion model from
-                        scratch, and along the way, will have gained hands-on experience with the mathematical toolbox
-                        of stochastic differential equations that is useful in many other fields. This course is ideal
+                        principles. This course is ideal
                         for students who want to develop a principled understanding of the theory and practice of
                         generative AI.
                       </span>
@@ -398,7 +438,9 @@
                   <!-- END NOTES ENTRY -->
 
                   <!-- NOTES ENTRY: embodied ai -->
-                  <div class="paper-entry">
+                  <div class="paper-entry"
+                    data-href="https://yuzhecheng.notion.site/Robot-Foundation-Models-32188bf1d73380ffbe3fc023e820c81f?pvs=74"
+                    data-target="_blank" role="link" tabindex="0">
 
                     <!-- RIGHT: text -->
                     <div class="paper-body">

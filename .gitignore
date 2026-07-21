@@ -1,6 +1,9 @@
 .DS_Store
 _site/*
 
+# style skill
+apple_design_skill.md
+
 # CV LaTeX source and build artifacts; keep the published PDF.
 data/*.tex
 data/*.aux
