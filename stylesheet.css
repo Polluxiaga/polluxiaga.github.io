@@ -254,7 +254,6 @@ img.hoverZoomLink {
    ========================================================================== */
 section.rebio {
   margin-top: 36px !important;
-  border-top: 1px solid var(--line);
 }
 
 .rebio td {

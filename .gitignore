@@ -1,2 +1,12 @@
 .DS_Store
 _site/*
+
+# CV LaTeX source and build artifacts; keep the published PDF.
+data/*.tex
+data/*.aux
+data/*.fdb_latexmk
+data/*.fls
+data/*.log
+data/*.out
+data/*.synctex.gz
+!data/cv.pdf
