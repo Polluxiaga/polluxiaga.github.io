@@ -358,6 +358,13 @@ h2::after {
   border: 1px solid var(--image-line);
   border-radius: 8px;
   background: var(--image-surface);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+  will-change: transform;
+}
+
+.paper_image_col:hover {
+  box-shadow: 0 8px 18px rgba(53, 43, 72, 0.08);
+  transform: translateY(-1px) scale(1.003);
 }
 
 .paper_teaser {
@@ -399,7 +406,7 @@ h2::after {
   backface-visibility: hidden;
 }
 
-.paper-entry:hover .paper_stay {
+.paper_image_col:hover .paper_stay {
   opacity: 1;
 }
 
