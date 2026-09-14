@@ -200,11 +200,18 @@ html[data-theme="dark"] .theme-toggle-icon {
 }
 
 .bio-photo a {
+  position: relative;
   display: inline-block;
-  width: min(100%, 190px);
-  aspect-ratio: 1 / 1;
+  width: 190px;
+  max-width: 100%;
   overflow: hidden;
   line-height: 0;
+}
+
+.bio-photo a::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 
 .name {
@@ -253,6 +260,11 @@ html[data-theme="dark"] .theme-toggle-icon {
 }
 
 img.hoverZoomLink {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: block;
   width: 100% !important;
   height: 100% !important;
