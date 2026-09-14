@@ -204,7 +204,6 @@ html[data-theme="dark"] .theme-toggle-icon {
   width: min(100%, 190px);
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  border-radius: 0;
   line-height: 0;
 }
 
@@ -257,11 +256,11 @@ img.hoverZoomLink {
   display: block;
   width: 100% !important;
   height: 100% !important;
-  max-width: none !important;
+  max-width: 100% !important;
   border: 0;
   border-radius: 0 !important;
   box-shadow: none;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 
