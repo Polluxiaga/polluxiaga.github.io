@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Homepage WenKai";
+  src: url("fonts/lxgwwenkai-name-79.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+5586;
+}
+
+@font-face {
+  font-family: "Homepage WenKai";
+  src: url("fonts/lxgwwenkai-name-114.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  unicode-range: U+4F59, U+8BDA;
+}
+
 /* ==========================================================================
    1. Global Styles
    ========================================================================== */
@@ -234,9 +252,10 @@ html[data-theme="dark"] .theme-toggle-icon {
 
 .name .name-cn {
   margin-left: 10px;
-  font-family: "Xingkai SC", "STXingkai", "HanziPen SC", "Kaiti SC", "STKaiti", "KaiTi", "楷体", "DFKai-SB", "LXGW WenKai", "FangSong", "仿宋", cursive, serif !important;
+  font-family: "Xingkai SC", "STXingkaiSC-Light", "Homepage WenKai", serif !important;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: 300;
+  font-synthesis: none;
   letter-spacing: 0.05em;
 }
 
